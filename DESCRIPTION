@@ -1,0 +1,17 @@
+Package: SidraFacil
+Type: Package
+Title: Framework for Automated Download of SIDRA IBGE Data
+Version: 0.1.2
+Authors@R: person("Samuel", "Amorim", email = "samuelamorimdatascientist@gmail.com", role = c("aut", "cre"))
+Description: The purpose of this framework package is to provide an easy, straightforward tool for downloading data from SIDRA IBGE based on simple user selection.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    sidrar,
+    dplyr,
+    tidyselect,
+    svDialogs,
+    png,
+    grid
+Config/roxygen2/version: 8.0.0
