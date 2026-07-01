@@ -240,7 +240,6 @@ down_incremental <- function(tabela, anos, variaveis, categorias, geo_escolha, g
 #' @importFrom svDialogs dlgInput dlgDir dlgMessage
 #' @importFrom png readPNG
 #' @importFrom grid grid.newpage grid.raster
-#' @importFrom writexl write_xlsx
 sidra_facil <- function(){
   ppgr_num = 1
   load_logo(ppgr_num)
@@ -426,11 +425,6 @@ sidra_facil <- function(){
     resultado,
     file.path(pasta, nomeArquivo),
     row.names = FALSE
-  )
-  
-  writexl::write_xlsx(
-    resultado,
-    path = file.path(pasta, nomeArquivo)
   )
   
   print(paste("OBRIGADO POR USAR O SIDRA F\u00c1CIL"))
