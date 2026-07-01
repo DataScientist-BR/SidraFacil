@@ -2,9 +2,18 @@
 % Please edit documentation in R/SidraFacil.R
 \name{sidra_facil}
 \alias{sidra_facil}
-\title{SIDRA FACIL - Pacote Framework para baixa automatizada de dados do SIDRA IBGE
-A proposta deste pacote framework - proporcionar uma ferramenta FACIL e descomplicada para baixa de dados do SIDRA IBGE a partir de simples selecao pelo usuario
-Solicita um titulo e um texto ao usuario e salva em um arquivo TXT.}
+\title{SIDRA FACIL – Framework package for the automated downloading of data from IBGE's SIDRA.
+This framework is an easy, straightforward tool for downloading data from SIDRA IBGE based on a simple user selection of the desired table number.
+Upon starting execution, a dialog box prompts the user to enter the number of the desired table.
+After the user specifies the table number, they are prompted to indicate the local folder where the search data will be saved.
+A ".txt" file containing all the information (dimensions) of the specified table—years, variables, categories, and geographic granularity—is saved by the package in the indicated folder.
+Dialog boxes are prompted to the user, to indicate sequentially, the years, variables, cathegories and geographic granularity desired.
+The information—years, variables, categories, and geographic granularity—must be separated by commas.
+This system will download
+The framework will download all the information and ultimately save it to a ".csv" file in the folder specified by the user at the beginning.
+"results <- sidra_facil()" will allow the results to also be saved in an object in the R Global Environment.
+The graduated tables will be in long format, with each column named according to the pattern "year_xxxx_var_xxx_cat_xxxx", where "year" corresponds to the data year, "var" to a specific variable, and "cat" to a specific category.
+This format was designed for sequential use with automated information extraction. Variable and category names can be obtained from the table information file (.txt).}
 \usage{
 sidra_facil()
 }
@@ -12,9 +21,18 @@ sidra_facil()
 Caminho completo do arquivo criado.
 }
 \description{
-SIDRA FACIL - Pacote Framework para baixa automatizada de dados do SIDRA IBGE
-A proposta deste pacote framework - proporcionar uma ferramenta FACIL e descomplicada para baixa de dados do SIDRA IBGE a partir de simples selecao pelo usuario
-Solicita um titulo e um texto ao usuario e salva em um arquivo TXT.
+SIDRA FACIL – Framework package for the automated downloading of data from IBGE's SIDRA.
+This framework is an easy, straightforward tool for downloading data from SIDRA IBGE based on a simple user selection of the desired table number.
+Upon starting execution, a dialog box prompts the user to enter the number of the desired table.
+After the user specifies the table number, they are prompted to indicate the local folder where the search data will be saved.
+A ".txt" file containing all the information (dimensions) of the specified table—years, variables, categories, and geographic granularity—is saved by the package in the indicated folder.
+Dialog boxes are prompted to the user, to indicate sequentially, the years, variables, cathegories and geographic granularity desired.
+The information—years, variables, categories, and geographic granularity—must be separated by commas.
+This system will download
+The framework will download all the information and ultimately save it to a ".csv" file in the folder specified by the user at the beginning.
+"results <- sidra_facil()" will allow the results to also be saved in an object in the R Global Environment.
+The graduated tables will be in long format, with each column named according to the pattern "year_xxxx_var_xxx_cat_xxxx", where "year" corresponds to the data year, "var" to a specific variable, and "cat" to a specific category.
+This format was designed for sequential use with automated information extraction. Variable and category names can be obtained from the table information file (.txt).
 }
 \examples{
 \dontrun{
